@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
+    <title>AIA Tech</title>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/js/index.js">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ///// -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="aia-tech">
+        <div class="menu">
+            <div class="logo">
+                <a href="./">
+                    <img src="./public/images/logo.svg" alt="logo" />
+                </a>
+            </div>
+            <div class="nav">
+                <div class="nav-item">
+                    <div class="nav-item-link">
+                        <a href="#" class="nav-link">GIỚI THIỆU</a>
+                    </div>
+                    <div class="nav-item-link">
+                        <a href="#" class="nav-link">SẢN PHẨM</a>
+                    </div>
+                    <div class="nav-item-link">
+                        <a href="#" class="nav-link">LIÊN HỆ</a>
+                    </div>
+                </div>
+                <div class="nav-item-mobile" onclick="toggleMenu()">
+                    <img src="./public/images/iconnavmb.svg" alt="logo" />
+                </div>
+            </div>
+            <div class="nav-mobile" id="mobileNav">
+                <div class="nav-item-mobile">
+                    <div class="nav-item-link">
+                        <a href="./index.html" class="nav-link">TRANG CHỦ</a>
+                    </div>
+                    <div class="nav-item-link">
+                        <a href="#" class="nav-link">GIỚI THIỆU</a>
+                    </div>
+                    <div class="nav-item-link">
+                        <a href="#" class="nav-link">SẢN PHẨM</a>
+                    </div>
+                    <div class="nav-item-link">
+                        <a href="#" class="nav-link">LIÊN HỆ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <section class="introduce">
+                <div class="introduce-div-txt">
+                    <h4 class="introduce-title">Hãy là một phần của thế giới AI trong tương lai</h4>
+                    <img class="introduce-line" src="./public/images/lineintroduce.svg" alt="img-title" />
+                    <p class="introduce-content">Giải mã sức mạnh của AI, giải phóng tiềm năng trong hệ thống vận
+                        hành của bạn với sự giúp sức của AI, IoT, Automation.</p>
+                    <div style="position: relative; cursor: pointer;">
+                        <img class="introduce-btn-contact" src="./public/images/btncontact.svg" alt="" />
+                        <p class="introduce-btn-contact-text">LIÊN HỆ</p>
+                    </div>
+                </div>
+                <div class="introduce-value-ai">
+                    <div class="introduce-div-border">
+                        <div class="introduce-div-background1"></div>
+                        <div class="introduce-div-background2">
+                            <div class="introduce-div-value">
+                                <p class="introduce-div-background2-title">Giá trị chúng tôi mang lại cho bạn</p>
+                                <div class="introduce-div-list-item">
+                                    <div class="introduce-div-item">
+                                        <img class="introduce-img-check" src="./public/images/checkicon.svg"
+                                            alt="checkicon" />
+                                        <p class="introduce-div-item-text">Tối giản hệ thống vận hành</p>
+                                    </div>
+                                    <div class="introduce-div-item">
+                                        <img class="introduce-img-check" src="./public/images/checkicon.svg"
+                                            alt="checkicon" />
+                                        <p class="introduce-div-item-text">Tối ưu chi phí</p>
+                                    </div>
+                                    <div class="introduce-div-item">
+                                        <img class="introduce-img-check" src="./public/images/checkicon.svg"
+                                            alt="checkicon" />
+                                        <p class="introduce-div-item-text">Nâng cao hiệu quả công việc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="introduce-div-input">
+                                <div class="introduce-styled-input">
+                                    <img class="introduce-styled-input-img" src="./public/images/ellipseloading.png"
+                                        alt="loading" />
+                                    <input class="introduce-input" type="text" placeholder="Bạn cần tôi điều gì?..." />
+                                </div>
+                            </div>
+                        </div>
+                        <img class="introduce-img-ai" src="./public/images/introduce-ai.png" alt="img" />
+                    </div>
+                    <div class="introduce-div-background3"></div>
+                    <div class="introduce-div-background4"></div>
+                </div>
+                <div class="introduce-combine">
+                    <div class="introduce-combine-title">
+                        chúng tôi là Sự kết hợp của các AI
+                    </div>
+                    <div class="introduce-combine-overlow">
+                        <div class="introduce-combine-list-item">
+                            <div class="introduce-combine-item">
+                                <img class="introduce-combine-item-img" src="./public/images/O9.svg" alt="icon" />
+                                <p class="introduce-combine-text">Pythera</p>
+                            </div>
+                            <div class="introduce-combine-item">
+                                <img class="introduce-combine-item-img" src="./public/images/O9.svg" alt="icon" />
+                                <p class="introduce-combine-text">Cyber</p>
+                            </div>
+                            <div class="introduce-combine-item">
+                                <img class="introduce-combine-item-img" src="./public/images/O9.svg" alt="icon" />
+                                <p style="width: 125px;" class="introduce-combine-text">Human AI</p>
+                            </div>
+                            <div class="introduce-combine-item">
+                                <img class="introduce-combine-item-img" src="./public/images/O9.svg" alt="icon" />
+                                <p class="introduce-combine-text">OpenAI</p>
+                            </div>
+                            <div class="introduce-combine-item">
+                                <img class="introduce-combine-item-img" src="./public/images/O9.svg" alt="icon" />
+                                <p class="introduce-combine-text">Semini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="forever">
+                <img class="forever-styled-img" src="./public/images/earth.png" alt="earth" />
+                <div class="forever-styled-title">
+                    <div class="forever-styled-text">
+                        <img src="./public/images/bracketleft.png" alt="icon" />
+                        <p class="forever-text">Get started with AIA tech</p>
+                        <img src="./public/images/bracketright.png" alt="icon" />
+                    </div>
+                    <h4 class="container-title">Pay once, use forever</h4>
+                </div>
+                <div class="forever-styled-box-overlow">
+                    <div class="forever-styled-box">
+                        <div class="forever-box-left">
+                            <div class="forever-box-list">
+                                <div class="forever-box-item">
+                                    <h4>Training model</h4>
+                                    <p>Custom AI chatbot, advanced analytics, dedicated account</p>
+                                </div>
+                                <div class="forever-box-content-list">
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>An AI chatbot that can understand your queries</p>
+                                    </div>
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>Personalized recommendations based on your preferences</p>
+                                    </div>
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>Ability to explore the app and its features without any cost</p>
+                                    </div>
+
+                                </div>
+                                <div style="position: relative;">
+                                    <img class="forever-btn-contact" src="./public/images/btncontactus.png" alt="btn" />
+                                    <p class="forever-text-btn-contact">contact us</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/iconbox.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="forever-box-center">
+                            <div class="forever-box-list-center">
+                                <div class="forever-box-item">
+                                    <h4>AI Customization</h4>
+                                    <p>Custom AI chatbot, advanced analytics, dedicated account</p>
+                                </div>
+                                <div class="forever-box-content-list">
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>An advanced AI chatbot that can understand complex queries</p>
+                                    </div>
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>An analytics dashboard to track your conversations</p>
+                                    </div>
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>Priority support to solve issues quickly</p>
+                                    </div>
+
+                                </div>
+                                <div style="position: relative;">
+                                    <img class="forever-btn-contact" src="./public/images/btncontactus.png" alt="btn" />
+                                    <p class="forever-text-btn-contact">contact us</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/iconboxcenter.png" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="forever-box-right">
+                            <div class="forever-box-list">
+                                <div class="forever-box-item">
+                                    <h4>Analyze big data</h4>
+                                    <p>Custom AI chatbot, advanced analytics, dedicated account</p>
+                                </div>
+                                <div class="forever-box-content-list">
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>An AI chatbot that can understand your queries</p>
+                                    </div>
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>Personalized recommendations based on your preferences</p>
+                                    </div>
+                                    <div class="forever-box-content-item">
+                                        <img src="./public/images/check-purple.svg" alt="icon" />
+                                        <p>Ability to explore the app and its features without any cost</p>
+                                    </div>
+
+                                </div>
+                                <div style="position: relative;">
+                                    <img class="forever-btn-contact" src="./public/images/btncontactus.png" alt="btn" />
+                                    <p class="forever-text-btn-contact">contact us</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/iconbox.png" alt="icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forever-icon-donw">
+                    <img style="cursor: pointer;" src="./public/images/donw.svg" alt="donw" />
+                </div>
+            </section>
+            <section class="howto">
+                <div class="howto-top">
+                    <div class="howto-top-left">
+                        <div class="howto-styled-text">
+                            <img src="./public/images/bracketleft.png" alt="icon" />
+                            <span class="forever-text">what can we do?</span>
+                            <img src="./public/images/bracketright.png" alt="icon" />
+                        </div>
+                        <h4 class="container-title">How to customize?</h4>
+                        <p>Allow users to customize the chatbot's appearance and behavior, making it more engaging
+                            and fun to interact with.</p>
+                        <div style="position: relative; cursor: pointer;">
+                            <img src="./public/images/btnconnectnow.png" alt="btn" />
+                            <span class="styled-text-btn-connect">CONNECT NOW</span>
+                        </div>
+                    </div>
+                    <div class="howto-top-right">
+                        <img src="./public/images/imghowto.png" alt="img" />
+                    </div>
+                </div>
+                <div class="howto-bottom-overlow">
+                    <div class="howto-bottom">
+                        <div class="howto-bottom-item">
+                            <img src="./public/images/linehowto.svg" alt="img" />
+                            <div class="howto-bottom-item-content">
+                                <p>01.</p>
+                                <h4>Sign up</h4>
+                                <span>
+                                    Create an account with Brainwave - AI chat app by providing your name, email..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="howto-bottom-item">
+                            <img src="./public/images/linearow.svg" alt="img" />
+                            <div class="howto-bottom-item-content">
+                                <p>02.</p>
+                                <h4>Connect with AI Chatbot</h4>
+                            </div>
+                        </div>
+                        <div class="howto-bottom-item">
+                            <img src="./public/images/linearow.svg" alt="img" />
+                            <div class="howto-bottom-item-content">
+                                <p>03.</p>
+                                <h4>Get Personalized Recommendations</h4>
+                            </div>
+                        </div>
+                        <div class="howto-bottom-item">
+                            <img src="./public/images/linearow.svg" alt="img" />
+                            <div class="howto-bottom-item-content">
+                                <p>04.</p>
+                                <h4>Explore and Engage</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="model">
+                <div class="model-style-title">
+                    <h4 class="container-title">Model đã training</h4>
+                    <p>The app uses natural language processing to understand user queries and provide accurate and
+                        relevant responses.</p>
+                </div>
+                <div class="model-training">
+                    <div class="model-training-left">
+                        <div class="model-item-one">
+                            <p class="model-item-text">Luật</p>
+                        </div>
+                        <div style="margin-right: 42px;" class="model-item-two">
+                            <p class="model-item-text">Kiến Trúc</p>
+                        </div>
+                        <div style="margin-right: 42px;" class="model-item-three">
+                            <p class="model-item-text">Y Tế</p>
+                        </div>
+                        <div style="margin-right: 10px;" class="model-item-four">
+                            <p class="model-item-text">Thời Trang</p>
+                        </div>
+                    </div>
+                    <div class="model-training-center">
+                        <img class="model-training-center-img" src="./public/images/imgmodal.png" alt="img" />
+                    </div>
+                    <div class="model-training-right">
+                        <div class="model-item-one">
+                            <p class="model-item-text">AI Luật</p>
+                        </div>
+                        <div style="margin-left: 47px;" class="model-item-two">
+                            <p class="model-item-text">Homecyber</p>
+                        </div>
+                        <div style="margin-left: 47px;" class="model-item-three">
+                            <p class="model-item-text">Khám bệnh online</p>
+                        </div>
+                        <div style="margin-left: 13px;" class="model-item-four">
+                            <p class="model-item-text">Tư vấn thời trang
+                                Easy Business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="model-training-mobile">
+                    <div class="model-training-center">
+                        <img class="model-training-center-img" src="./public/images/imgmodal.png" alt="img" />
+                    </div>
+                    <div class="model-training-right">
+                        <div class="model-item-mobile">
+                            <div class="model-item-one">
+                                <p class="model-item-text">Luật</p>
+                            </div>
+                            <div class="model-item-one">
+                                <p class="model-item-text">AI Luật</p>
+                            </div>
+                        </div>
+                        <div style="padding-left: 15px;" class="model-item-mobile">
+                            <div class="model-item-two">
+                                <p class="model-item-text">Kiến Trúc</p>
+                            </div>
+                            <div class="model-item-two">
+                                <p class="model-item-text">Homecyber</p>
+                            </div>
+                        </div>
+                        <div style="padding-left: 15px;" class="model-item-mobile">
+                            <div class="model-item-three">
+                                <p class="model-item-text">Y Tế</p>
+                            </div>
+                            <div class="model-item-three">
+                                <p class="model-item-text">Khám bệnh online</p>
+                            </div>
+                        </div>
+                        <div class="model-item-mobile">
+                            <div class="model-item-four">
+                                <p class="model-item-text">Thời Trang</p>
+                            </div>
+                            <div class="model-item-four">
+                                <p class="model-item-text">Tư vấn thời trang
+                                    Easy Business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="integrate">
+                <div class="integrate-styled-title">
+                    <h4 class="container-title">Làm sao để tích hợp AI vào hệ thống của bạn?</h4>
+                </div>
+                <div class="integrate-list-step-overlow">
+                    <div class="integrate-list-step">
+                        <div class="integrate-item">
+                            <img class="integrate-list-step-img" src="./public/images/step1.svg" alt="step" />
+                            <div class="integrate-item-detail">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <p class="integrate-title-step-text">Lets users quickly find answers to their</p>
+                                    <p class="integrate-title-step-text">questions without having to search</p>
+                                    <p class="integrate-title-step-text"> through multiple sources.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img src="./public//images/iconstep1.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="integrate-item">
+                            <img class="integrate-list-step-img" src="./public/images/step2.svg" alt="step" />
+                            <div class="integrate-item-detail">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <p class="integrate-title-step-text">The app uses natural language processing</p>
+                                    <p class="integrate-title-step-text">to understand user queries and provide</p>
+                                    <p class="integrate-title-step-text"> accurate and relevant responses.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img src="./public//images/iconstep2.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="integrate-item">
+                            <img class="integrate-list-step-img" src="./public/images/step3.svg" alt="step" />
+                            <div class="integrate-item-detail">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <p class="integrate-title-step-text">Connect with the AI chatbot from anywhere,
+
+                                    </p>
+                                    <p class="integrate-title-step-text">on any device, making it more accessible
+                                    </p>
+                                    <p class="integrate-title-step-text">and convenient.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img src="./public//images/iconstep3.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="integrate-item">
+                            <img class="integrate-list-step-img" src="./public/images/step4.svg" alt="step" />
+                            <div class="integrate-item-detail">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                    </p>
+                                    <p class="integrate-title-step-text">questions without having to search</p>
+                                    <p class="integrate-title-step-text"> through multiple sources.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img src="./public//images/iconstep4.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="contact-box">
+                    <div class="contact-styled-title">
+                        <div class="contact-title">
+                            <img src="./public/images/bracketleft.png" alt="icon" />
+                            <p class="forever-text">Get started with AIA tech</p>
+                            <img src="./public/images/bracketright.png" alt="icon" />
+                        </div>
+                        <h4 class="container-title">Contact us</h4>
+                    </div>
+                    <div class="contact-us-detail">
+                        <div class="contact-us-detail-item">
+                            <img class="contact-us-detail-item-img" src="./public/images/phonecontact.svg" alt="img" />
+                            <div class="contact-us-detail-styled-item">
+                                <p>Hotline</p>
+                                <a>0912345678</a>
+                            </div>
+                        </div>
+                        <div class="contact-us-detail-item">
+                            <img class="contact-us-detail-item-img" src="./public/images/mailcontact.svg" alt="img" />
+                            <div class="contact-us-detail-styled-item">
+                                <p>Email</p>
+                                <a>Contact@AIATech.com.vn</a>
+                            </div>
+                        </div>
+                        <div class="contact-us-detail-item">
+                            <img class="contact-us-detail-item-img" src="./public/images/folowconact.svg" alt="img" />
+                            <div class="contact-us-detail-styled-item">
+                                <p>Follow us</p>
+                            </div>
+                            <div class="contact-styled-img">
+                                <img class="contact-styled-img-item" src="./public/images/fbcontact.svg" alt="img" />
+                                <img class="contact-styled-img-item" src="./public/images/instaconact.svg" alt="img" />
+                                <img class="contact-styled-img-item" src="./public/images/incontact.svg" alt="img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-empower">
+                    <img style="width: 334px; height: 334px; z-index: 99; background: transparent;"
+                        src="./public/images/empowerimg.svg" alt="img" />
+                    <h4 style="max-width: 624px; z-index: 99; background: transparent;" class="container-title">Empower
+                        Business with
+                        AI-Powered Solutions</h4>
+                    <img class="contact-empower-styled-line" src="./public/images/lineintroduce.svg" alt="img-title" />
+                    <p class="contact-empower-content">
+                        Our AI-powered suite of solutions empowers your business with cutting-edge
+                        capabilities.Turning text to images harnessing intelligent AI and performing in-depth data
+                        analysis
+                    </p>
+                    <p class="contact-empower-content-mobile">
+                        Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI
+                        chat app.
+                    </p>
+                    <div style="position: relative; cursor: pointer; z-index: 99; background: transparent;">
+                        <img style="background: transparent;" src="./public/images/btngetstarted.svg" alt="img" />
+                        <p class="contact-btn-get-started-text">Get started</p>
+                    </div>
+                    <img class="contact-empower-img-left" src="./public/images/unionleft.svg" alt="img" />
+                    <img class="contact-empower-img-right" src="./public/images/unionright.svg" alt="img" />
+                    <img class="contact-empower-img-center" src="./public/images/bgcontact.png" alt="img" />
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="logo">
+                    <img style="background: transparent;" src="./public/images/logo.svg" alt="logo" />
+                </div>
+                <div class="nav-footer">
+                    <div class="nav">
+                        <div class="nav-item">
+                            <div class="nav-item-link">
+                                <a href="#" class="nav-link">features</a>
+                            </div>
+                            <div class="nav-item-link">
+                                <a href="#" class="nav-link">pricing</a>
+                            </div>
+                            <div class="nav-item-link">
+                                <a href="#" class="nav-link">how to use</a>
+                            </div>
+                            <div class="nav-item-link">
+                                <a href="#" class="nav-link">roadmap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="line-footer"></div> -->
+            <div class="footer-bottom">
+                <div class="footer-years">@2023 UI8</div>
+                <div class="footer-social">
+                    <img class="footer-social-img" src="./public/images/discord.svg" alt="icon" />
+                    <img class="footer-social-img" src="./public/images/tw.svg" alt="icon" />
+                    <img class="footer-social-img" src="./public/images/instargam.svg" alt="icon" />
+                    <img class="footer-social-img" src="./public/images/telegram.svg" alt="icon" />
+                    <img class="footer-social-img" src="./public/images/fb.svg" alt="icon" />
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function toggleMenu() {
+        var mobileMenu = document.getElementById("mobileNav");
+        var body = document.body;
+
+        if (mobileMenu.style.display === "flex") {
+            mobileMenu.style.display = "none";
+            body.classList.remove("body-no-scroll");
+        } else {
+            mobileMenu.style.display = "flex";
+            body.classList.add("body-no-scroll");
+        }
+    }
+</script>
