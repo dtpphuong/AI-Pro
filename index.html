@@ -66,12 +66,13 @@
         </div>
         <div class="wrapper">
             <section class="introduce">
+                <!-- <img class="img-hero" src="./public/images/heroheader.svg" alt="img" /> -->
                 <div class="introduce-div-txt">
                     <h4 class="introduce-title">Hãy là một phần của thế giới AI trong tương lai</h4>
                     <img class="introduce-line" src="./public/images/lineintroduce.svg" alt="img-title" />
                     <p class="introduce-content">Giải mã sức mạnh của AI, giải phóng tiềm năng trong hệ thống vận
                         hành của bạn với sự giúp sức của AI, IoT, Automation.</p>
-                    <div style="position: relative; cursor: pointer;">
+                    <div style="position: relative; cursor: pointer; background: transparent;">
                         <img class="introduce-btn-contact" src="./public/images/btncontact.svg" alt="" />
                         <p class="introduce-btn-contact-text">LIÊN HỆ</p>
                     </div>
@@ -144,7 +145,9 @@
                 </div>
             </section>
             <section class="forever">
-                <img class="forever-styled-img" src="./public/images/earth.png" alt="earth" />
+                <div class="forever-bg">
+                    <img class="forever-styled-img" src="./public/images/forever-icon.svg" alt="earth" />
+                </div>
                 <div class="forever-styled-title">
                     <div class="forever-styled-text">
                         <img src="./public/images/bracketleft.png" alt="icon" />
@@ -187,28 +190,30 @@
                         </div>
                         <div class="forever-box-center">
                             <div class="forever-box-list-center">
-                                <div class="forever-box-item">
-                                    <h4>AI Customization</h4>
-                                    <p>Custom AI chatbot, advanced analytics, dedicated account</p>
-                                </div>
-                                <div class="forever-box-content-list">
-                                    <div class="forever-box-content-item">
-                                        <img src="./public/images/check-purple.svg" alt="icon" />
-                                        <p>An advanced AI chatbot that can understand complex queries</p>
+                                <div class="forever-box-list-center-bg">
+                                    <div class="forever-box-item">
+                                        <h4>AI Customization</h4>
+                                        <p>Custom AI chatbot, advanced analytics, dedicated account</p>
                                     </div>
-                                    <div class="forever-box-content-item">
-                                        <img src="./public/images/check-purple.svg" alt="icon" />
-                                        <p>An analytics dashboard to track your conversations</p>
+                                    <div class="forever-box-content-list">
+                                        <div class="forever-box-content-item">
+                                            <img src="./public/images/check-purple.svg" alt="icon" />
+                                            <p>An advanced AI chatbot that can understand complex queries</p>
+                                        </div>
+                                        <div class="forever-box-content-item">
+                                            <img src="./public/images/check-purple.svg" alt="icon" />
+                                            <p>An analytics dashboard to track your conversations</p>
+                                        </div>
+                                        <div class="forever-box-content-item">
+                                            <img src="./public/images/check-purple.svg" alt="icon" />
+                                            <p>Priority support to solve issues quickly</p>
+                                        </div>
                                     </div>
-                                    <div class="forever-box-content-item">
-                                        <img src="./public/images/check-purple.svg" alt="icon" />
-                                        <p>Priority support to solve issues quickly</p>
+                                    <div style="position: relative; background: transparent;">
+                                        <img class="forever-btn-contact" src="./public/images/btncontactus.png"
+                                            alt="btn" />
+                                        <p class="forever-text-btn-contact">contact us</p>
                                     </div>
-
-                                </div>
-                                <div style="position: relative;">
-                                    <img class="forever-btn-contact" src="./public/images/btncontactus.png" alt="btn" />
-                                    <p class="forever-text-btn-contact">contact us</p>
                                 </div>
                             </div>
                             <div>
@@ -234,7 +239,6 @@
                                         <img src="./public/images/check-purple.svg" alt="icon" />
                                         <p>Ability to explore the app and its features without any cost</p>
                                     </div>
-
                                 </div>
                                 <div style="position: relative;">
                                     <img class="forever-btn-contact" src="./public/images/btncontactus.png" alt="btn" />
@@ -394,17 +398,38 @@
                 </div>
                 <div class="integrate-list-step-overlow">
                     <div class="integrate-list-step">
+                        <!--  -->
                         <div class="integrate-item">
                             <img class="integrate-list-step-img" src="./public/images/step1.svg" alt="step" />
                             <div class="integrate-item-detail">
                                 <div class="integrate-top">
-                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <h4 class="integrate-title-step">Ten Step 1</h4>
                                     <p class="integrate-title-step-text">Lets users quickly find answers to their</p>
                                     <p class="integrate-title-step-text">questions without having to search</p>
                                     <p class="integrate-title-step-text"> through multiple sources.</p>
                                 </div>
                                 <div class="integrate-bottom">
-                                    <img src="./public//images/iconstep1.svg" alt="icon" />
+                                    <img class="integrate-img" src="./public/images/iconstep1.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="integrate-gradientstep" src="./public/images/gradientstep.svg"
+                                alt="gradientstep" />
+                        </div>
+                        <div class="integrate-item-hover">
+                            <img class="integrate-list-step-img" src="./public/images/cardhover.svg" alt="step" />
+                            <div class="integrate-item-detail-hover">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Ask anything</h4>
+                                    <p class="integrate-title-step-text">Lets users quickly find answers to their</p>
+                                    <p class="integrate-title-step-text">questions without having to search</p>
+                                    <p class="integrate-title-step-text"> through multiple sources.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img class="integrate-img" src="./public/images/cart1.svg" alt="icon" />
                                     <div class="integrate-bottom-right">
                                         <p class="explore-more">explore more</p>
                                         <img src="./public/images/iconright.svg" />
@@ -412,17 +437,38 @@
                                 </div>
                             </div>
                         </div>
+                        <!--  -->
                         <div class="integrate-item">
                             <img class="integrate-list-step-img" src="./public/images/step2.svg" alt="step" />
                             <div class="integrate-item-detail">
                                 <div class="integrate-top">
-                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <h4 class="integrate-title-step">Ten Step 2</h4>
                                     <p class="integrate-title-step-text">The app uses natural language processing</p>
                                     <p class="integrate-title-step-text">to understand user queries and provide</p>
                                     <p class="integrate-title-step-text"> accurate and relevant responses.</p>
                                 </div>
                                 <div class="integrate-bottom">
-                                    <img src="./public//images/iconstep2.svg" alt="icon" />
+                                    <img src="./public/images/iconstep2.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="integrate-gradientstep" src="./public/images/gradientstep.svg"
+                                alt="gradientstep" />
+                        </div>
+                        <div class="integrate-item-hover">
+                            <img class="integrate-list-step-img" src="./public/images/cardhover.svg" alt="step" />
+                            <div class="integrate-item-detail-hover">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Ask anything</h4>
+                                    <p class="integrate-title-step-text">Lets users quickly find answers to their</p>
+                                    <p class="integrate-title-step-text">questions without having to search</p>
+                                    <p class="integrate-title-step-text"> through multiple sources.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img class="integrate-img" src="./public/images/cart2.svg" alt="icon" />
                                     <div class="integrate-bottom-right">
                                         <p class="explore-more">explore more</p>
                                         <img src="./public/images/iconright.svg" />
@@ -434,7 +480,7 @@
                             <img class="integrate-list-step-img" src="./public/images/step3.svg" alt="step" />
                             <div class="integrate-item-detail">
                                 <div class="integrate-top">
-                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <h4 class="integrate-title-step">Ten Step 3</h4>
                                     <p class="integrate-title-step-text">Connect with the AI chatbot from anywhere,
 
                                     </p>
@@ -443,7 +489,27 @@
                                     <p class="integrate-title-step-text">and convenient.</p>
                                 </div>
                                 <div class="integrate-bottom">
-                                    <img src="./public//images/iconstep3.svg" alt="icon" />
+                                    <img src="./public/images/iconstep3.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="integrate-gradientstep" src="./public/images/gradientstep.svg"
+                                alt="gradientstep" />
+                        </div>
+                        <div class="integrate-item-hover">
+                            <img class="integrate-list-step-img" src="./public/images/cardhover.svg" alt="step" />
+                            <div class="integrate-item-detail-hover">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Ask anything</h4>
+                                    <p class="integrate-title-step-text">Lets users quickly find answers to their</p>
+                                    <p class="integrate-title-step-text">questions without having to search</p>
+                                    <p class="integrate-title-step-text"> through multiple sources.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img class="integrate-img" src="./public/images/cart3.svg" alt="icon" />
                                     <div class="integrate-bottom-right">
                                         <p class="explore-more">explore more</p>
                                         <img src="./public/images/iconright.svg" />
@@ -455,14 +521,34 @@
                             <img class="integrate-list-step-img" src="./public/images/step4.svg" alt="step" />
                             <div class="integrate-item-detail">
                                 <div class="integrate-top">
-                                    <h4 class="integrate-title-step">Tene Step 1</h4>
+                                    <h4 class="integrate-title-step">Ten Step 4</h4>
                                     <p class="integrate-title-step-text">Lets users quickly find answers to their
                                     </p>
                                     <p class="integrate-title-step-text">questions without having to search</p>
                                     <p class="integrate-title-step-text"> through multiple sources.</p>
                                 </div>
                                 <div class="integrate-bottom">
-                                    <img src="./public//images/iconstep4.svg" alt="icon" />
+                                    <img src="./public/images/iconstep4.svg" alt="icon" />
+                                    <div class="integrate-bottom-right">
+                                        <p class="explore-more">explore more</p>
+                                        <img src="./public/images/iconright.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="integrate-gradientstep" src="./public/images/gradientstep.svg"
+                                alt="gradientstep" />
+                        </div>
+                        <div class="integrate-item-hover">
+                            <img class="integrate-list-step-img" src="./public/images/cardhover.svg" alt="step" />
+                            <div class="integrate-item-detail-hover">
+                                <div class="integrate-top">
+                                    <h4 class="integrate-title-step">Ask anything</h4>
+                                    <p class="integrate-title-step-text">Lets users quickly find answers to their</p>
+                                    <p class="integrate-title-step-text">questions without having to search</p>
+                                    <p class="integrate-title-step-text"> through multiple sources.</p>
+                                </div>
+                                <div class="integrate-bottom">
+                                    <img class="integrate-img" src="./public/images/cart4.svg" alt="icon" />
                                     <div class="integrate-bottom-right">
                                         <p class="explore-more">explore more</p>
                                         <img src="./public/images/iconright.svg" />
@@ -512,8 +598,7 @@
                     </div>
                 </div>
                 <div class="contact-empower">
-                    <img style="width: 334px; height: 334px; z-index: 99; background: transparent;"
-                        src="./public/images/empowerimg.svg" alt="img" />
+                    <img class="contact-empower-img" src="./public/images/empowerimg.svg" alt="img" />
                     <h4 style="max-width: 624px; z-index: 99; background: transparent;" class="container-title">Empower
                         Business with
                         AI-Powered Solutions</h4>
