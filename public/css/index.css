@@ -270,7 +270,7 @@ li {
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 0 32px;
+    padding: 10px 0 32px;
     align-self: stretch;
     color: var(--Neutral-02, #CAC6DD);
     text-align: center;
