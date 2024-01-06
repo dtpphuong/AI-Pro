@@ -21,6 +21,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
@@ -67,11 +73,16 @@
         <div class="wrapper">
             <section class="introduce">
                 <div class="introduce-div-txt">
-                    <h4 class="introduce-title">Hãy là một phần của thế giới AI trong tương lai</h4>
-                    <img class="introduce-line" src="./public/images/lineintroduce.svg" alt="img-title" />
-                    <p class="introduce-content">Giải mã sức mạnh của AI, giải phóng tiềm năng trong hệ thống vận
+                    <h4 class="introduce-title" data-aos="fade-up" data-aos-duration="1500">Hãy là một phần của thế giới
+                        AI trong tương lai</h4>
+                    <img class="introduce-line" data-aos="fade-up" data-aos-duration="1500"
+                        src="./public/images/lineintroduce.svg" alt="img-title" />
+                    <p class="introduce-content" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration="1500">Giải mã sức mạnh của AI, giải phóng tiềm
+                        năng trong hệ thống vận
                         hành của bạn với sự giúp sức của AI, IoT, Automation.</p>
-                    <div style="position: relative; cursor: pointer; background: transparent;">
+                    <div style="position: relative; cursor: pointer; background: transparent;" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
                         <img class="introduce-btn-contact" src="./public/images/btncontact.svg" alt="" />
                         <p class="introduce-btn-contact-text">LIÊN HỆ</p>
                     </div>
@@ -81,19 +92,27 @@
                         <div class="introduce-div-background1"></div>
                         <div class="introduce-div-background2">
                             <div class="introduce-div-value">
-                                <p class="introduce-div-background2-title">Giá trị chúng tôi mang lại cho bạn</p>
+                                <p class="introduce-div-background2-title" data-aos="fade-up" data-aos-duration="500">
+                                    Giá trị chúng tôi mang lại
+                                    cho bạn</p>
                                 <div class="introduce-div-list-item">
-                                    <div class="introduce-div-item">
+                                    <div class="introduce-div-item" data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor" data-aos-offset="300"
+                                        data-aos-duration="1000">
                                         <img class="introduce-img-check" src="./public/images/checkicon.svg"
                                             alt="checkicon" />
                                         <p class="introduce-div-item-text">Tối giản hệ thống vận hành</p>
                                     </div>
-                                    <div class="introduce-div-item">
+                                    <div class="introduce-div-item" data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor" data-aos-offset="300"
+                                        data-aos-duration="1500">
                                         <img class="introduce-img-check" src="./public/images/checkicon.svg"
                                             alt="checkicon" />
                                         <p class="introduce-div-item-text">Tối ưu chi phí</p>
                                     </div>
-                                    <div class="introduce-div-item">
+                                    <div class="introduce-div-item" data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor" data-aos-offset="300"
+                                        data-aos-duration="2000">
                                         <img class="introduce-img-check" src="./public/images/checkicon.svg"
                                             alt="checkicon" />
                                         <p class="introduce-div-item-text">Nâng cao hiệu quả công việc</p>
@@ -114,7 +133,8 @@
                     <div class="introduce-div-background4"></div>
                 </div>
                 <div class="introduce-combine">
-                    <div class="introduce-combine-title">
+                    <div class="introduce-combine-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="500">
                         chúng tôi là Sự kết hợp của các AI
                     </div>
                     <div class="introduce-combine-overlow">
@@ -148,12 +168,14 @@
                     <img class="forever-styled-img" src="./public/images/forever-icon.svg" alt="earth" />
                 </div>
                 <div class="forever-styled-title">
-                    <div class="forever-styled-text">
+                    <div class="forever-styled-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1000">
                         <img src="./public/images/bracketleft.png" alt="icon" />
                         <p class="forever-text">Get started with AIA tech</p>
                         <img src="./public/images/bracketright.png" alt="icon" />
                     </div>
-                    <h4 class="container-title">Pay once, use forever</h4>
+                    <h4 class="container-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="2000">Pay once, use forever</h4>
                 </div>
                 <div class="forever-styled-box-overlow">
                     <div class="forever-styled-box">
@@ -256,21 +278,26 @@
             </section>
             <section class="howto">
                 <div class="howto-top">
-                    <div class="howto-top-left">
-                        <div class="howto-styled-text">
+                    <div class="howto-top-left" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <div class="howto-styled-text" data-aos="fade-right" data-aos-offset="100"
+                            data-aos-easing="ease-in-sine">
                             <img src="./public/images/bracketleft.png" alt="icon" />
                             <span class="forever-text">what can we do?</span>
                             <img src="./public/images/bracketright.png" alt="icon" />
                         </div>
-                        <h4 class="container-title">How to customize?</h4>
-                        <p>Allow users to customize the chatbot's appearance and behavior, making it more engaging
+                        <h4 class="container-title" data-aos="fade-right" data-aos-offset="200"
+                            data-aos-easing="ease-in-sine">How to customize?</h4>
+                        <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Allow users to
+                            customize the chatbot's appearance and behavior, making it more engaging
                             and fun to interact with.</p>
-                        <div style="position: relative; cursor: pointer;">
+                        <div style="position: relative; cursor: pointer;" data-aos="fade-right" data-aos-offset="400"
+                            data-aos-easing="ease-in-sine">
                             <img src="./public/images/btnconnectnow.png" alt="btn" />
                             <span class="styled-text-btn-connect">CONNECT NOW</span>
                         </div>
                     </div>
-                    <div class="howto-top-right">
+                    <div class="howto-top-right" data-aos="zoom-in-left">
                         <img src="./public/images/imghowto.png" alt="img" />
                     </div>
                 </div>
@@ -312,39 +339,48 @@
             </section>
             <section class="model">
                 <div class="model-style-title">
-                    <h4 class="container-title">Model đã training</h4>
-                    <p>The app uses natural language processing to understand user queries and provide accurate and
+                    <h4 class="container-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">Model đã training</h4>
+                    <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">The app
+                        uses natural language processing to understand user queries and provide accurate and
                         relevant responses.</p>
                 </div>
                 <div class="model-training">
                     <div class="model-training-left">
-                        <div class="model-item-one">
+                        <div class="model-item-one" data-aos="fade-right" data-aos="zoom-in-right"
+                            data-aos-duration="500">
                             <p class="model-item-text">Luật</p>
                         </div>
-                        <div style="margin-right: 42px;" class="model-item-two">
+                        <div style="margin-right: 42px;" class="model-item-two" data-aos="zoom-in-right"
+                            data-aos-duration="1500">
                             <p class="model-item-text">Kiến Trúc</p>
                         </div>
-                        <div style="margin-right: 42px;" class="model-item-three">
+                        <div style="margin-right: 42px;" class="model-item-three" data-aos="zoom-in-right"
+                            data-aos-duration="1500">
                             <p class="model-item-text">Y Tế</p>
                         </div>
-                        <div style="margin-right: 10px;" class="model-item-four">
+                        <div style="margin-right: 10px;" class="model-item-four" data-aos="zoom-in-right"
+                            data-aos-duration="500">
                             <p class="model-item-text">Thời Trang</p>
                         </div>
                     </div>
-                    <div class="model-training-center">
+                    <div class="model-training-center" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img class="model-training-center-img" src="./public/images/imgmodal.png" alt="img" />
                     </div>
                     <div class="model-training-right">
-                        <div class="model-item-one">
+                        <div class="model-item-one" data-aos="zoom-in-left" data-aos-duration="500">
                             <p class="model-item-text">AI Luật</p>
                         </div>
-                        <div style="margin-left: 47px;" class="model-item-two">
+                        <div style="margin-left: 47px;" class="model-item-two" data-aos="zoom-in-left"
+                            data-aos-duration="1500">
                             <p class="model-item-text">Homecyber</p>
                         </div>
-                        <div style="margin-left: 47px;" class="model-item-three">
+                        <div style="margin-left: 47px;" class="model-item-three" data-aos="zoom-in-left"
+                            data-aos-duration="1500">
                             <p class="model-item-text">Khám bệnh online</p>
                         </div>
-                        <div style="margin-left: 13px;" class="model-item-four">
+                        <div style="margin-left: 13px;" class="model-item-four" data-aos="zoom-in-left"
+                            data-aos-duration="500">
                             <p class="model-item-text">Tư vấn thời trang
                                 Easy Business</p>
                         </div>
@@ -392,7 +428,8 @@
                 </div>
             </section>
             <section class="integrate">
-                <div class="integrate-styled-title">
+                <div class="integrate-styled-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="1000">
                     <h4 class="container-title">Làm sao để tích hợp AI vào hệ thống của bạn?</h4>
                 </div>
                 <div class="integrate-list-step-overlow">
@@ -415,7 +452,7 @@
                                         <img class="integrate-img" src="./public/images/iconstep1.svg" alt="icon" />
                                         <div class="integrate-bottom-right">
                                             <p class="explore-more">explore more</p>
-                                            <img src="./public/images/iconright.svg" />
+                                            <img class="explore-more-icon" src="./public/images/iconright.svg" />
                                         </div>
                                     </div>
                                 </div>
@@ -584,26 +621,28 @@
             <section class="contact">
                 <div class="contact-box">
                     <div class="contact-styled-title">
-                        <div class="contact-title">
+                        <div class="contact-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1000">
                             <img src="./public/images/bracketleft.png" alt="icon" />
                             <p class="forever-text">Get started with AIA tech</p>
                             <img src="./public/images/bracketright.png" alt="icon" />
                         </div>
-                        <h4 class="container-title">Contact us</h4>
+                        <h4 class="container-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1500">Contact us</h4>
                     </div>
                     <div class="contact-us-detail">
                         <div class="contact-us-detail-item">
                             <img class="contact-us-detail-item-img" src="./public/images/phonecontact.svg" alt="img" />
                             <div class="contact-us-detail-styled-item">
                                 <p>Hotline</p>
-                                <a>0912345678</a>
+                                <a href="tel:0912345678">0912345678</a>
                             </div>
                         </div>
                         <div class="contact-us-detail-item">
                             <img class="contact-us-detail-item-img" src="./public/images/mailcontact.svg" alt="img" />
                             <div class="contact-us-detail-styled-item">
                                 <p>Email</p>
-                                <a>Contact@AIATech.com.vn</a>
+                                <a href="mailto:Contact@AIATech.com.vn">Contact@AIATech.com.vn</a>
                             </div>
                         </div>
                         <div class="contact-us-detail-item">
@@ -687,6 +726,7 @@
 </html>
 
 <script>
+    AOS.init();
     function toggleMenu() {
         var mobileMenu = document.getElementById("mobileNav");
         var body = document.body;

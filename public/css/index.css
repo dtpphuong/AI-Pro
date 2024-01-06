@@ -31,7 +31,7 @@ li {
 
 .aia-tech {
     width: 100vw;
-    background-image: url("../../public/images/aia-bg.svg");
+    background-image: url("../../public/images/aia-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,6 +387,7 @@ li {
     top: -70px;
     right: -180px;
     background: transparent;
+    animation: shake 10s linear 1s infinite alternate-reverse;
 }
 
 .introduce-img-ai {
@@ -954,12 +955,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* animation: moveUpDownScroll 2s infinite alternate; */
+    animation: moveUpDownScroll 2s infinite alternate;
 }
 
 .forever-icon-down img {
     cursor: pointer;
-    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s ease;
 }
 
 
@@ -1642,6 +1643,7 @@ li {
 }
 
 .integrate-bottom-right {
+    /* position: relative; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1649,6 +1651,8 @@ li {
     gap: 20px;
     cursor: pointer;
     background: transparent;
+    /* animation: moveNextPre 10s linear 3s infinite alternate-reverse; */
+
 }
 
 .explore-more {
@@ -1662,6 +1666,10 @@ li {
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
+
+/* .explore-more-icon {
+    transition: transform 0.3s ease;
+} */
 
 .integrate-title-step {
     margin: 0;
@@ -1869,6 +1877,7 @@ li {
     width: 334px;
     height: 334px;
     background: transparent;
+    animation: shake 10s linear 3s infinite alternate-reverse;
 }
 
 .contact-empower-img {
@@ -1949,7 +1958,7 @@ li {
 
 .contact-empower-img-center {
     width: 100%;
-    height: 940px;
+    height: 980px;
     z-index: 0;
     position: absolute;
     top: -150px;
@@ -2060,16 +2069,15 @@ li {
 
 /* footer */
 .footer {
-    z-index: 999;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 90px 40px 24px;
+    padding: 100px 40px 24px;
 }
 
 .footer {
     @media (max-width: 769px) {
-        padding: 40px 20px 20px;
+        padding: 80px 20px 20px;
     }
 }
 
@@ -2209,5 +2217,53 @@ li {
 
     50% {
         transform: translateY(-10px);
+    }
+}
+
+@keyframes moveUpDownScroll {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveNextPre {
+
+    0%,
+    100% {
+        transform: translateX(-5);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+/* animation: shake 10s linear 3s infinite alternate-reverse; */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateY(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateY(10px);
     }
 }
