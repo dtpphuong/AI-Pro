@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .body-no-scroll {
     overflow: hidden;
 }
@@ -26,12 +30,11 @@ li {
 
 
 .aia-tech {
-    width: 100%;
+    width: 100vw;
     background-image: url("../../public/images/aia-bg.svg");
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: start;
 }
 
 .logo {
@@ -40,12 +43,12 @@ li {
 }
 
 .menu {
-    height: 84px;
+    height: 80px;
     display: flex;
     padding: 0px 40px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--neutral-015, rgba(255, 255, 255, 0.10));
+    /* border-bottom: 1px solid var(--neutral-015, rgba(255, 255, 255, 0.10)); */
     background: rgba(14, 12, 21, 0.12);
     backdrop-filter: blur(16px);
 }
@@ -53,6 +56,12 @@ li {
 .menu {
     @media (max-width: 1025px) {
         padding: 0px 20px;
+    }
+}
+
+.menu {
+    @media (max-width: 575px) {
+        border-bottom: 1px solid var(--neutral-015, rgba(255, 255, 255, 0.10));
     }
 }
 
