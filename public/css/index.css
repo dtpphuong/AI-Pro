@@ -6,9 +6,21 @@
     /* background: #080811; */
 }
 
+html {
+    background: #080811;
+}
+
 body {
     z-index: 0;
     position: relative;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) !important;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -578,6 +590,10 @@ li {
     width: 100%;
     padding: 0 78px;
     background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduce-div-input {
@@ -716,6 +732,8 @@ li {
 .introduce-combine-overlow {
     overflow: hidden;
     background: transparent;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .introduce-combine-list-item {
@@ -727,7 +745,7 @@ li {
     /* gap: 96px; */
     white-space: nowrap;
     /* Ngăn chặn xuống dòng */
-    animation: scrollText 20s linear infinite;
+    animation: scrollText 40s linear infinite;
 }
 
 .introduce-combine-item {
@@ -780,7 +798,7 @@ li {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
 }
 
@@ -807,7 +825,7 @@ li {
 .forever-styled-img {
     width: 252px;
     height: 252px;
-    animation: rotate 6s linear infinite;
+    animation: rotate 9s linear infinite;
     /* transition: transform 0.3s ease;
     animation: moveUpDown 2s infinite alternate; */
 }
@@ -1132,6 +1150,7 @@ li {
     justify-content: center;
     /* animation: moveUpDown 2s infinite alternate; */
     animation: shake 10s linear 1s infinite alternate-reverse;
+    /* animation: rotate 9s linear infinite; */
 }
 
 .howto-top-right img {
