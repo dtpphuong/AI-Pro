@@ -1149,8 +1149,8 @@ li {
     align-items: center;
     justify-content: center;
     /* animation: moveUpDown 2s infinite alternate; */
-    animation: shake 10s linear 1s infinite alternate-reverse;
-    /* animation: rotate 9s linear infinite; */
+    /* animation: shake 10s linear 1s infinite alternate-reverse;/ */
+    animation: rotate 9s linear infinite;
 }
 
 .howto-top-right img {
