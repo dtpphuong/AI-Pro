@@ -23,9 +23,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- aos css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
@@ -305,20 +302,17 @@
             <section class="howto">
                 <div class="howto-top">
                     <div class="howto-top-left" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-                        data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <div class="howto-styled-text" data-aos="fade-right" data-aos-offset="100"
-                            data-aos-easing="ease-in-sine">
+                        data-aos-offset="300">
+                        <div class="howto-styled-text" data-aos="fade-right" data-aos-offset="100">
                             <img src="./public/images/bracketleft.png" alt="icon" />
                             <span class="forever-text">what can we do?</span>
                             <img src="./public/images/bracketright.png" alt="icon" />
                         </div>
-                        <h4 class="container-title" data-aos="fade-right" data-aos-offset="200"
-                            data-aos-easing="ease-in-sine">How to customize?</h4>
-                        <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Allow users to
+                        <h4 class="container-title" data-aos="fade-right" data-aos-offset="200">How to customize?</h4>
+                        <p data-aos="fade-right" data-aos-offset="300">Allow users to
                             customize the chatbot's appearance and behavior, making it more engaging
                             and fun to interact with.</p>
-                        <div style="position: relative; cursor: pointer;" data-aos="fade-right" data-aos-offset="400"
-                            data-aos-easing="ease-in-sine">
+                        <div style="position: relative; cursor: pointer;" data-aos="fade-right" data-aos-offset="400">
                             <img src="./public/images/btnconnectnow.png" alt="btn" />
                             <span class="styled-text-btn-connect">CONNECT NOW</span>
                         </div>
@@ -757,7 +751,11 @@
 </html>
 
 <script>
-    AOS.init();
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init({
+            offset: 50,
+        });
+    });
     function toggleMenu() {
         var mobileMenu = document.getElementById("mobileNav");
         var body = document.body;
