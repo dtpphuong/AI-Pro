@@ -71,15 +71,15 @@ li {
 }
 
 .nav-item {
-    @media (max-width: 769px) {
+    @media (max-width: 960px) {
         display: none;
     }
 }
 
-.nav-item-mobile {
+/* .nav-item-mobile {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .nav-item-mobile {
     display: none;
@@ -87,10 +87,17 @@ li {
 }
 
 .nav-item-mobile {
-    @media (max-width: 769px) {
-        display: block;
+    @media (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         cursor: pointer;
     }
+}
+
+.nav-item-mobile img {
+    width: 44px;
+    height: 44px;
 }
 
 .nav-mobile {
@@ -111,8 +118,10 @@ li {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background: #080811;
         gap: 16px;
+        /* background: #080811; */
+        background-image: url("../../public/images/bg-menu-mobile.png");
+        background-position: center top;
     }
 }
 
@@ -147,6 +156,13 @@ li {
     text-transform: uppercase;
 }
 
+@media (max-width: 769px) {
+    .nav-link {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
 .nav-link:active,
 .nav-link:focus {
     color: #FFF;
@@ -166,6 +182,13 @@ li {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 769px) {
+    .nav-link:hover {
+        font-size: 16px;
+        line-height: 32px;
+    }
 }
 
 .wrapper {
@@ -631,6 +654,7 @@ li {
     background: transparent;
 }
 
+/* 
 .introduce-combine-overlow {
     overflow: auto;
     background: transparent;
@@ -642,7 +666,68 @@ li {
     justify-content: flex-start;
     align-content: center;
     background: transparent;
+}
+
+.introduce-combine-item {
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    background: transparent;
+}
+
+.introduce-combine-item {
+    @media (max-width: 575px) {
+        padding: 20px 12px;
+    }
+}
+
+.introduce-combine-item-img {
+    width: 40px;
+    height: 40px;
+}
+
+.introduce-combine-item-img {
+    @media (max-width: 575px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.introduce-combine-text {
+    margin: 0;
+    color: var(--neutral-01100, #FFF);
+    text-align: center;
+    font-family: Sarabun;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.introduce-combine-text {
+    @media (max-width: 575px) {
+        font-size: 20px;
+    }
+} */
+
+
+.introduce-combine-overlow {
+    overflow: hidden;
+    background: transparent;
+}
+
+.introduce-combine-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    background: transparent;
     /* gap: 96px; */
+    white-space: nowrap;
+    /* Ngăn chặn xuống dòng */
+    animation: scrollText 20s linear infinite;
 }
 
 .introduce-combine-item {
@@ -689,6 +774,16 @@ li {
     }
 }
 
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* forever */
 
 .forever {
@@ -712,8 +807,9 @@ li {
 .forever-styled-img {
     width: 252px;
     height: 252px;
-    transition: transform 0.3s ease;
-    animation: moveUpDown 2s infinite alternate;
+    animation: rotate 6s linear infinite;
+    /* transition: transform 0.3s ease;
+    animation: moveUpDown 2s infinite alternate; */
 }
 
 .forever-styled-text {
@@ -955,7 +1051,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: moveUpDownScroll 2s infinite alternate;
+    /* animation: moveUpDownScroll 2s infinite alternate; */
+    animation: shake 10s linear 1s infinite alternate-reverse;
 }
 
 .forever-icon-down img {
@@ -1033,7 +1130,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: moveUpDown 2s infinite alternate;
+    /* animation: moveUpDown 2s infinite alternate; */
+    animation: shake 10s linear 1s infinite alternate-reverse;
 }
 
 .howto-top-right img {
@@ -1069,7 +1167,14 @@ li {
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 24px;
+}
+
+@media (max-width: 1224px) {
+    .howto-bottom {
+        justify-content: flex-start;
+    }
 }
 
 .howto-bottom-overlow {
