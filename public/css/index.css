@@ -1097,6 +1097,7 @@ li {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    gap: 24px
 }
 
 .howto-top {
@@ -1140,10 +1141,11 @@ li {
     line-height: 24px;
 }
 
-/* .howto-top-left p {
-    font-size: 14px;
-    line-height: 24px;
-} */
+@media (max-width: 1224px) {
+    .howto-top-left p {
+        max-width: 500px;
+    }
+}
 
 .howto-top-right {
     position: relative;
@@ -1156,15 +1158,16 @@ li {
 }
 
 .howto-top-right img {
-    width: 450px;
-    height: 450px;
+    width: 460px;
+    height: 460px;
+    padding: 20px;
     transition: transform 0.3s ease;
 }
 
 .howto-top-right img {
-    @media (max-width: 1024px) {
-        width: 314px;
-        height: 314px;
+    @media (max-width: 1224px) {
+        width: 324px;
+        height: 324px;
     }
 }
 
@@ -1281,7 +1284,12 @@ li {
     .model {
         background-size: cover;
         background-position: -45px 20px;
+    }
+}
 
+@media (max-width: 900px) {
+    .model {
+        padding: 60px 20px 80px;
     }
 }
 
