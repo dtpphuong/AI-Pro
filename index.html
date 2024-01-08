@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
-<style>
+<!-- <style>
     #loading-container {
         display: flex;
         justify-content: center;
@@ -57,14 +57,14 @@
     #content {
         display: block;
     }
-</style>
+</style> -->
 
 <body>
     <div id="loading-container">
         <div class="loader"></div>
     </div>
     <div class="aia-tech-container">
-        <div class="aia-tech" id="content" style="display:none;">
+        <div class="aia-tech">
             <div class="menu-mobile">
                 <div class="nav-mobile" id="mobileNav">
                     <div class="nav-item-mobile">
@@ -817,32 +817,11 @@
 </html>
 
 <script>
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     setTimeout(function () {
-    //         document.getElementById("loading-container").style.display = "none";
-    //         document.getElementById("content").style.display = "block";
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        document.getElementById("loading-container").style.display = "none";
-        document.getElementById("content").style.display = "block";
-    }, 3000);
-    // });
-
-    AOS.init({
-        offset: 50,
-        easing: 'ease-in-out'
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init({
+            offset: 50,
+        });
     });
-
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     setTimeout(function () {
-    //         document.getElementById("loading-container").style.display = "none";
-    //         document.getElementById("content").style.display = "block";
-    //     }, 3000);
-    //     AOS.init({
-    //         offset: 50,
-    //     });
-    // });
     function toggleMenu() {
         var mobileMenu = document.getElementById("mobileNav");
         var body = document.body;
