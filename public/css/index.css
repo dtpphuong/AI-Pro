@@ -68,7 +68,7 @@ li {
 }
 
 .menu {
-    @media (max-width: 575px) {
+    @media (max-width: 768px) {
         border-bottom: 1px solid var(--neutral-015, rgba(255, 255, 255, 0.10));
     }
 }
@@ -278,7 +278,7 @@ li {
 
 .introduce-div-txt {
     @media (max-width: 575px) {
-        padding: 50px 0 300px;
+        padding: 30px 0 280px;
     }
 }
 
@@ -643,13 +643,19 @@ li {
 
 .introduce-combine {
     width: 100%;
-    padding: 95px 0 160px;
+    padding: 95px 0 100px;
     background: transparent;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px */
+}
+
+.introduce-combine {
+    @media (max-width: 769px) {
+        padding: 50px 0 50px;
+    }
 }
 
 .introduce-combine {
@@ -817,7 +823,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-image: url("../../public/images/forever-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -877,6 +883,13 @@ li {
 .forever-styled-box {
     @media (max-width:1275px) {
         justify-content: flex-start;
+    }
+}
+
+.forever-styled-box {
+    @media (max-width: 575px) {
+        padding: 80px 0 24px;
+
     }
 }
 
@@ -1092,6 +1105,18 @@ li {
     gap: 60px;
 }
 
+@media (max-width: 769px) {
+    .howto {
+        padding: 80px 20px 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .howto {
+        padding: 50px 20px 50px;
+    }
+}
+
 .howto-top {
     display: flex;
     flex-direction: row;
@@ -1261,7 +1286,7 @@ li {
 
 .model {
     width: 100%;
-    padding: 60px 20px 200px;
+    padding: 20px 20px 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1282,8 +1307,9 @@ li {
 
 @media (max-width: 1025px) {
     .model {
+        padding: 20px 20px 180px;
         background-size: cover;
-        background-position: -45px 20px;
+        background-position: -35px 20px;
     }
 }
 
@@ -1295,16 +1321,18 @@ li {
 
 @media (max-width: 769px) {
     .model {
+        padding: 60px 20px 50px;
         background-size: cover;
-        background-position: -150px 20px;
-
+        background-position: -55px 20px;
+        gap: 40px;
     }
 }
 
 @media (max-width: 575px) {
     .model {
+        padding: 20px 20px 50px;
         background-size: cover;
-        background-position: -200px 20px;
+        background-position: -80px 20px;
 
     }
 }
@@ -1320,6 +1348,8 @@ li {
 }
 
 .model-style-title p {
+    max-width: 100%;
+    width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1335,6 +1365,13 @@ li {
     line-height: 24px;
     background: transparent;
 }
+
+/* @media (max-width: 769px) {
+    .model-style-title p {
+        max-width: 500px;
+        width: 100%;
+    }
+} */
 
 .model-training {
     display: flex;
@@ -1569,9 +1606,24 @@ li {
 
 .integrate {
     position: relative;
-    padding: 60px 20px 108px;
+    padding: 60px 20px 60px;
     width: 100%;
 }
+
+@media (max-width: 1024px) {
+    .integrate {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    .integrate {
+        padding: 20px;
+    }
+
+}
+
+
 
 .integrate-styled-title {
     padding: 0 0 80px;
@@ -1867,6 +1919,12 @@ li {
     gap: 80px;
 }
 
+@media (max-width: 575px) {
+    .contact-box {
+        gap: 30px;
+    }
+}
+
 .contact-styled-title {
     width: 100%;
     display: flex;
@@ -2115,7 +2173,7 @@ li {
 .contact-empower-img-center {
     @media (max-width: 575px) {
         top: -140px;
-        height: 480px;
+        height: 440px;
     }
 }
 
