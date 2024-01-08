@@ -1095,7 +1095,7 @@ li {
 .howto-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -1127,7 +1127,7 @@ li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 24px;
+    gap: 16px;
 }
 
 .howto-top-left p {
@@ -1140,10 +1140,10 @@ li {
     line-height: 24px;
 }
 
-.howto-top-left p {
+/* .howto-top-left p {
     font-size: 14px;
     line-height: 24px;
-}
+} */
 
 .howto-top-right {
     position: relative;
@@ -1156,22 +1156,22 @@ li {
 }
 
 .howto-top-right img {
-    width: 512px;
-    height: 512px;
+    width: 450px;
+    height: 450px;
     transition: transform 0.3s ease;
 }
 
 .howto-top-right img {
     @media (max-width: 1024px) {
-        width: 334px;
-        height: 334px;
+        width: 314px;
+        height: 314px;
     }
 }
 
 .howto-top-right img {
     @media (max-width: 575px) {
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
     }
 }
 
