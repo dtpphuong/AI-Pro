@@ -34,6 +34,9 @@ li {
     list-style: none;
 }
 
+.aia-tech-container {
+    background: #080811;
+}
 
 .aia-tech {
     background-image: url("../../public/images/aia-bg.png");
