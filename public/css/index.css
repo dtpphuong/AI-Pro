@@ -276,7 +276,7 @@ li {
 
 .introduce-div-txt {
     @media (max-width: 575px) {
-        padding: 50px 0 50px;
+        padding: 50px 0 300px;
     }
 }
 
@@ -439,10 +439,10 @@ li {
 
 .introduce-img-ai {
     @media (max-width: 575px) {
-        top: 400px;
-        right: -20px;
-        width: 240px;
-        height: 280px;
+        top: -290px;
+        right: -10px;
+        width: 320px;
+        height: 380px;
     }
 }
 
@@ -652,7 +652,7 @@ li {
 
 .introduce-combine {
     @media (max-width: 575px) {
-        padding: 150px 0 100px;
+        padding: 50px 0 50px;
     }
 }
 
