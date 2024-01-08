@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, viewport-fit=cover">
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
     <title>AIA Tech</title>
     <link rel="stylesheet" href="./public/css/index.css">
@@ -25,9 +26,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
+<style>
+    #loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #080811;
+    }
+
+    .loader {
+        border: 8px solid #fff;
+        border-radius: 50%;
+        border-top: 8px solid #aaaaaa;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #content {
+        display: block;
+    }
+</style>
 
 <body>
-    <div class="aia-tech">
+    <div id="loading-container">
+        <div class="loader"></div>
+    </div>
+    <div class="aia-tech" id="content" style="display:none;">
         <div class="menu-mobile">
             <div class="nav-mobile" id="mobileNav">
                 <div class="nav-item-mobile">
@@ -68,17 +104,18 @@
                     <img src="./public/images/iconnavmb.svg" alt="logo" />
                 </div>
             </div>
-
         </div>
         <div class="wrapper">
             <section class="introduce">
                 <div class="introduce-div-txt">
-                    <h4 class="introduce-title" data-aos="fade-up" data-aos-duration="1500">Hãy là một phần của thế giới
+                    <h4 class="introduce-title" data-aos="fade-up" data-aos-duration="1500">Hãy là một phần của thế
+                        giới
                         AI trong tương lai</h4>
                     <img class="introduce-line" data-aos="fade-up" data-aos-duration="1500"
                         src="./public/images/lineintroduce.svg" alt="img-title" />
                     <p class="introduce-content" data-aos="fade-right" data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" data-aos-duration="1500">Giải mã sức mạnh của AI, giải phóng tiềm
+                        data-aos-easing="ease-in-sine" data-aos-duration="1500">Giải mã sức mạnh của AI, giải phóng
+                        tiềm
                         năng trong hệ thống vận
                         hành của bạn với sự giúp sức của AI, IoT, Automation.</p>
                     <div style="position: relative; cursor: pointer; background: transparent;" data-aos="fade-left"
@@ -304,7 +341,8 @@
                             <span class="forever-text">what can we do?</span>
                             <img src="./public/images/bracketright.png" alt="icon" />
                         </div>
-                        <h4 class="container-title" data-aos="fade-right" data-aos-offset="200">How to customize?</h4>
+                        <h4 class="container-title" data-aos="fade-right" data-aos-offset="200">How to customize?
+                        </h4>
                         <p data-aos="fade-right" data-aos-offset="300">Allow users to
                             customize the chatbot's appearance and behavior, making it more engaging
                             and fun to interact with.</p>
@@ -463,7 +501,8 @@
                                 <div class="integrate-item-detail">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ten Step 1</h4>
-                                        <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                        <p class="integrate-title-step-text">Lets users quickly find answers to
+                                            their
                                         </p>
                                         <p class="integrate-title-step-text">questions without having to search</p>
                                         <p class="integrate-title-step-text"> through multiple sources.</p>
@@ -485,7 +524,8 @@
                                 <div class="integrate-item-detail-hover">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ask anything</h4>
-                                        <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                        <p class="integrate-title-step-text">Lets users quickly find answers to
+                                            their
                                         </p>
                                         <p class="integrate-title-step-text">questions without having to search</p>
                                         <p class="integrate-title-step-text"> through multiple sources.</p>
@@ -509,9 +549,11 @@
                                 <div class="integrate-item-detail">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ten Step 2</h4>
-                                        <p class="integrate-title-step-text">The app uses natural language processing
+                                        <p class="integrate-title-step-text">The app uses natural language
+                                            processing
                                         </p>
-                                        <p class="integrate-title-step-text">to understand user queries and provide</p>
+                                        <p class="integrate-title-step-text">to understand user queries and provide
+                                        </p>
                                         <p class="integrate-title-step-text"> accurate and relevant responses.</p>
                                     </div>
                                     <div class="integrate-bottom">
@@ -531,7 +573,8 @@
                                 <div class="integrate-item-detail-hover">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ask anything</h4>
-                                        <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                        <p class="integrate-title-step-text">Lets users quickly find answers to
+                                            their
                                         </p>
                                         <p class="integrate-title-step-text">questions without having to search</p>
                                         <p class="integrate-title-step-text"> through multiple sources.</p>
@@ -555,9 +598,11 @@
                                 <div class="integrate-item-detail">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ten Step 3</h4>
-                                        <p class="integrate-title-step-text">Connect with the AI chatbot from anywhere,
+                                        <p class="integrate-title-step-text">Connect with the AI chatbot from
+                                            anywhere,
                                         </p>
-                                        <p class="integrate-title-step-text">on any device, making it more accessible
+                                        <p class="integrate-title-step-text">on any device, making it more
+                                            accessible
                                         </p>
                                         <p class="integrate-title-step-text">and convenient.</p>
                                     </div>
@@ -578,7 +623,8 @@
                                 <div class="integrate-item-detail-hover">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ask anything</h4>
-                                        <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                        <p class="integrate-title-step-text">Lets users quickly find answers to
+                                            their
                                         </p>
                                         <p class="integrate-title-step-text">questions without having to search</p>
                                         <p class="integrate-title-step-text"> through multiple sources.</p>
@@ -600,7 +646,8 @@
                                 <div class="integrate-item-detail">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ten Step 4</h4>
-                                        <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                        <p class="integrate-title-step-text">Lets users quickly find answers to
+                                            their
                                         </p>
                                         <p class="integrate-title-step-text">questions without having to search</p>
                                         <p class="integrate-title-step-text"> through multiple sources.</p>
@@ -620,7 +667,8 @@
                                 <div class="integrate-item-detail-hover">
                                     <div class="integrate-top">
                                         <h4 class="integrate-title-step">Ask anything</h4>
-                                        <p class="integrate-title-step-text">Lets users quickly find answers to their
+                                        <p class="integrate-title-step-text">Lets users quickly find answers to
+                                            their
                                         </p>
                                         <p class="integrate-title-step-text">questions without having to search</p>
                                         <p class="integrate-title-step-text"> through multiple sources.</p>
@@ -681,7 +729,8 @@
                 <div class="contact-empower">
                     <img class="contact-empower-img" src="./public/images/empowerimg.svg" alt="img" />
                     <h4 style="max-width: 624px; z-index: 99; background: transparent;" class="container-title"
-                        data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Empower
+                        data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                        Empower
                         Business with
                         AI-Powered Solutions</h4>
                     <img class="contact-empower-styled-line" data-aos="fade-up"
@@ -694,7 +743,8 @@
                         analysis
                     </p>
                     <p class="contact-empower-content-mobile">
-                        Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI
+                        Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open
+                        AI
                         chat app.
                     </p>
                     <div style="position: relative; cursor: pointer; z-index: 99; background: transparent;"
@@ -751,11 +801,32 @@
 </html>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        AOS.init({
-            offset: 50,
-        });
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     setTimeout(function () {
+    //         document.getElementById("loading-container").style.display = "none";
+    //         document.getElementById("content").style.display = "block";
+
+    // document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.getElementById("loading-container").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 3000);
+    // });
+
+    AOS.init({
+        offset: 50,
+        easing: 'ease-in-out'
     });
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     setTimeout(function () {
+    //         document.getElementById("loading-container").style.display = "none";
+    //         document.getElementById("content").style.display = "block";
+    //     }, 3000);
+    //     AOS.init({
+    //         offset: 50,
+    //     });
+    // });
     function toggleMenu() {
         var mobileMenu = document.getElementById("mobileNav");
         var body = document.body;
