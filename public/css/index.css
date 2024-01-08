@@ -747,7 +747,7 @@ li {
     /* gap: 96px; */
     white-space: nowrap;
     /* Ngăn chặn xuống dòng */
-    animation: scrollText 40s linear infinite;
+    animation: scrollText 50s linear infinite;
 }
 
 .introduce-combine-item {
@@ -796,7 +796,7 @@ li {
 
 @keyframes scrollText {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 
     100% {
