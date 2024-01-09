@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
     <title>AIA Tech</title>
     <link rel="stylesheet" href="./public/css/index.css">
-    <link rel="stylesheet" href="./public/js/index.js">
     <!-- link font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -26,43 +25,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
-<!-- <style>
-    #loading-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #080811;
-    }
-
-    .loader {
-        border: 8px solid #fff;
-        border-radius: 50%;
-        border-top: 8px solid #aaaaaa;
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    #content {
-        display: block;
-    }
-</style> -->
 
 <body>
-    <div id="loading-container">
-        <div class="loader"></div>
-    </div>
     <div class="aia-tech-container">
         <div class="aia-tech">
             <div class="menu-mobile">
@@ -72,18 +36,18 @@
                             <a href="./index.html" class="nav-link">TRANG CHỦ</a>
                         </div>
                         <div class="nav-item-link">
-                            <a href="#" class="nav-link">GIỚI THIỆU</a>
+                            <a href="#introduce" class="nav-link">GIỚI THIỆU</a>
                         </div>
                         <div class="nav-item-link">
-                            <a href="#" class="nav-link">SẢN PHẨM</a>
+                            <a href="#forever_product" class="nav-link">SẢN PHẨM</a>
                         </div>
                         <div class="nav-item-link">
-                            <a href="#" class="nav-link">LIÊN HỆ</a>
+                            <a href="#contact_us" class="nav-link">LIÊN HỆ</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="logo">
                     <a href="./">
                         <img src="./public/images/logo.svg" alt="logo" />
@@ -92,13 +56,13 @@
                 <div class="nav">
                     <div class="nav-item">
                         <div class="nav-item-link">
-                            <a href="#" class="nav-link">GIỚI THIỆU</a>
+                            <a href="#introduce" class="nav-link">GIỚI THIỆU</a>
                         </div>
                         <div class="nav-item-link">
-                            <a href="#" class="nav-link">SẢN PHẨM</a>
+                            <a href="#forever_product" class="nav-link">SẢN PHẨM</a>
                         </div>
                         <div class="nav-item-link">
-                            <a href="#" class="nav-link">LIÊN HỆ</a>
+                            <a href="#contact_us" class="nav-link">LIÊN HỆ</a>
                         </div>
                     </div>
                     <div class="nav-item-mobile" onclick="toggleMenu()">
@@ -107,7 +71,7 @@
                 </div>
             </div>
             <div class="wrapper">
-                <section class="introduce">
+                <section class="introduce" id="introduce">
                     <div class="introduce-div-txt">
                         <h4 class="introduce-title" data-aos="fade-up" data-aos-duration="1500">Hãy là một phần của thế
                             giới
@@ -223,7 +187,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="forever">
+                <section class="forever" id="forever_product">
                     <div class="forever-bg">
                         <img class="forever-styled-img" src="./public/images/forever-icon.svg" alt="earth" />
                     </div>
@@ -491,14 +455,31 @@
                         </div>
                     </div>
                 </section>
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
                 <section class="integrate">
                     <div class="integrate-styled-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1000">
                         <h4 class="container-title">Làm sao để tích hợp AI vào hệ thống của bạn?</h4>
                     </div>
+                    <div class="integrate-btn-list">
+                        <button class="integrate-btn" onclick="scrollToNextStep(-1)"><img
+                                src="./public/images/arrow-left.svg" alt="icon" /></button>
+                        <button class="integrate-btn" onclick="scrollToNextStep(1)"><img
+                                src="./public/images/arrow-right.svg" alt="icon" /></button>
+                    </div>
                     <div class="integrate-list-step-overlow">
                         <div class="integrate-list-step">
-                            <div class="integrate-list-step-position" onmouseover="showHoverItem(this, 1)"
+                            <div class="integrate-list-step-position1" onmouseover="showHoverItem(this, 1)"
                                 onmouseout="hideHoverItem(this, 1)">
                                 <div class="integrate-item">
                                     <div class="integrate-step-img-hidden">
@@ -511,7 +492,8 @@
                                             <p class="integrate-title-step-text">Lets users quickly find answers to
                                                 their
                                             </p>
-                                            <p class="integrate-title-step-text">questions without having to search</p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
                                             <p class="integrate-title-step-text"> through multiple sources.</p>
                                         </div>
                                         <div class="integrate-bottom">
@@ -534,7 +516,8 @@
                                             <p class="integrate-title-step-text">Lets users quickly find answers to
                                                 their
                                             </p>
-                                            <p class="integrate-title-step-text">questions without having to search</p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
                                             <p class="integrate-title-step-text"> through multiple sources.</p>
                                         </div>
                                         <div class="integrate-bottom">
@@ -547,7 +530,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="integrate-list-step-position" onmouseover="showHoverItem(this,2)"
+                            <div class="integrate-list-step-position2" onmouseover="showHoverItem(this,2)"
                                 onmouseout="hideHoverItem(this, 2)">
                                 <div class="integrate-item1">
                                     <div class="integrate-step-img-hidden">
@@ -560,9 +543,11 @@
                                             <p class="integrate-title-step-text">The app uses natural language
                                                 processing
                                             </p>
-                                            <p class="integrate-title-step-text">to understand user queries and provide
+                                            <p class="integrate-title-step-text">to understand user queries and
+                                                provide
                                             </p>
-                                            <p class="integrate-title-step-text"> accurate and relevant responses.</p>
+                                            <p class="integrate-title-step-text"> accurate and relevant responses.
+                                            </p>
                                         </div>
                                         <div class="integrate-bottom">
                                             <img src="./public/images/iconstep2.svg" alt="icon" />
@@ -584,7 +569,8 @@
                                             <p class="integrate-title-step-text">Lets users quickly find answers to
                                                 their
                                             </p>
-                                            <p class="integrate-title-step-text">questions without having to search</p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
                                             <p class="integrate-title-step-text"> through multiple sources.</p>
                                         </div>
                                         <div class="integrate-bottom">
@@ -597,7 +583,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="integrate-list-step-position" onmouseover="showHoverItem(this,3)"
+                            <div class="integrate-list-step-position3" onmouseover="showHoverItem(this,3)"
                                 onmouseout="hideHoverItem(this, 3)">
                                 <div class="integrate-item2">
                                     <div class="integrate-step-img-hidden">
@@ -635,7 +621,8 @@
                                             <p class="integrate-title-step-text">Lets users quickly find answers to
                                                 their
                                             </p>
-                                            <p class="integrate-title-step-text">questions without having to search</p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
                                             <p class="integrate-title-step-text"> through multiple sources.</p>
                                         </div>
                                         <div class="integrate-bottom">
@@ -648,18 +635,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="integrate-list-step-position" onmouseover="showHoverItem(this, 4)"
+                            <div class="integrate-list-step-position4" onmouseover="showHoverItem(this,4)"
                                 onmouseout="hideHoverItem(this, 4)">
                                 <div class="integrate-item3">
-                                    <img class="integrate-list-step-img" src="./public/images/step4.svg" alt="step" />
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img" src="./public/images/step4.svg"
+                                            alt="step" />
+                                    </div>
                                     <div class="integrate-item-detail">
                                         <div class="integrate-top">
                                             <h4 class="integrate-title-step">Ten Step 4</h4>
-                                            <p class="integrate-title-step-text">Lets users quickly find answers to
-                                                their
+                                            <p class="integrate-title-step-text">Connect with the AI chatbot from
+                                                anywhere,
                                             </p>
-                                            <p class="integrate-title-step-text">questions without having to search</p>
-                                            <p class="integrate-title-step-text"> through multiple sources.</p>
+                                            <p class="integrate-title-step-text">on any device, making it more
+                                                accessible
+                                            </p>
+                                            <p class="integrate-title-step-text">and convenient.</p>
                                         </div>
                                         <div class="integrate-bottom">
                                             <img src="./public/images/iconstep4.svg" alt="icon" />
@@ -671,15 +663,18 @@
                                     </div>
                                 </div>
                                 <div class="integrate-item-hover3">
-                                    <img class="integrate-list-step-img-hover" src="./public/images/cardhover.svg"
-                                        alt="step" />
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img-hover" src="./public/images/cardhover.svg"
+                                            alt="step" />
+                                    </div>
                                     <div class="integrate-item-detail-hover">
                                         <div class="integrate-top">
                                             <h4 class="integrate-title-step">Ask anything</h4>
                                             <p class="integrate-title-step-text">Lets users quickly find answers to
                                                 their
                                             </p>
-                                            <p class="integrate-title-step-text">questions without having to search</p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
                                             <p class="integrate-title-step-text"> through multiple sources.</p>
                                         </div>
                                         <div class="integrate-bottom">
@@ -692,10 +687,218 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="integrate-list-step-position5" onmouseover="showHoverItem(this, 5)"
+                                onmouseout="hideHoverItem(this, 5)">
+                                <div class="integrate-item4">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img" src="./public/images/step5.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ten Step 5</h4>
+                                            <p class="integrate-title-step-text">Lets users quickly find answers to
+                                                their
+                                            </p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
+                                            <p class="integrate-title-step-text"> through multiple sources.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img class="integrate-img" src="./public/images/iconstep5.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img class="explore-more-icon" src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="integrate-item-hover4">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img-hover" src="./public/images/cardhover.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail-hover">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ask anything</h4>
+                                            <p class="integrate-title-step-text">Lets users quickly find answers to
+                                                their
+                                            </p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
+                                            <p class="integrate-title-step-text"> through multiple sources.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img class="integrate-img" src="./public/images/cart5.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integrate-list-step-position6" onmouseover="showHoverItem(this,6)"
+                                onmouseout="hideHoverItem(this, 6)">
+                                <div class="integrate-item5">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img" src="./public/images/step6.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ten Step 6</h4>
+                                            <p class="integrate-title-step-text">The app uses natural language
+                                                processing
+                                            </p>
+                                            <p class="integrate-title-step-text">to understand user queries and
+                                                provide
+                                            </p>
+                                            <p class="integrate-title-step-text"> accurate and relevant responses.
+                                            </p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img src="./public/images/iconstep6.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="integrate-item-hover5">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img-hover" src="./public/images/cardhover.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail-hover">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ask anything</h4>
+                                            <p class="integrate-title-step-text">Lets users quickly find answers to
+                                                their
+                                            </p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
+                                            <p class="integrate-title-step-text"> through multiple sources.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img class="integrate-img" src="./public/images/cart6.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integrate-list-step-position7" onmouseover="showHoverItem(this,7)"
+                                onmouseout="hideHoverItem(this, 7)">
+                                <div class="integrate-item6">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img" src="./public/images/step7.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ten Step 7</h4>
+                                            <p class="integrate-title-step-text">Connect with the AI chatbot from
+                                                anywhere,
+                                            </p>
+                                            <p class="integrate-title-step-text">on any device, making it more
+                                                accessible
+                                            </p>
+                                            <p class="integrate-title-step-text">and convenient.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img src="./public/images/iconstep7.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="integrate-item-hover6">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img-hover" src="./public/images/cardhover.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail-hover">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ask anything</h4>
+                                            <p class="integrate-title-step-text">Lets users quickly find answers to
+                                                their
+                                            </p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
+                                            <p class="integrate-title-step-text"> through multiple sources.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img class="integrate-img" src="./public/images/cart7.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integrate-list-step-position8" onmouseover="showHoverItem(this,8)"
+                                onmouseout="hideHoverItem(this, 8)">
+                                <div class="integrate-item7">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img" src="./public/images/step8.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ten Step 8</h4>
+                                            <p class="integrate-title-step-text">Connect with the AI chatbot from
+                                                anywhere,
+                                            </p>
+                                            <p class="integrate-title-step-text">on any device, making it more
+                                                accessible
+                                            </p>
+                                            <p class="integrate-title-step-text">and convenient.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img src="./public/images/iconstep8.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="integrate-item-hover7">
+                                    <div class="integrate-step-img-hidden">
+                                        <img class="integrate-list-step-img-hover" src="./public/images/cardhover.svg"
+                                            alt="step" />
+                                    </div>
+                                    <div class="integrate-item-detail-hover">
+                                        <div class="integrate-top">
+                                            <h4 class="integrate-title-step">Ask anything</h4>
+                                            <p class="integrate-title-step-text">Lets users quickly find answers to
+                                                their
+                                            </p>
+                                            <p class="integrate-title-step-text">questions without having to search
+                                            </p>
+                                            <p class="integrate-title-step-text"> through multiple sources.</p>
+                                        </div>
+                                        <div class="integrate-bottom">
+                                            <img class="integrate-img" src="./public/images/cart8.svg" alt="icon" />
+                                            <div class="integrate-bottom-right">
+                                                <p class="explore-more">explore more</p>
+                                                <img src="./public/images/iconright.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section class="contact">
+                <section class="contact" id="contact_us">
                     <div class="contact-box">
                         <div class="contact-styled-title">
                             <div class="contact-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
@@ -783,16 +986,16 @@
                         <div class="nav">
                             <div class="nav-item">
                                 <div class="nav-item-link">
-                                    <a href="#" class="nav-link">features</a>
+                                    <a href="#menu" class="nav-link">features</a>
                                 </div>
                                 <div class="nav-item-link">
-                                    <a href="#" class="nav-link">pricing</a>
+                                    <a href="#menu" class="nav-link">pricing</a>
                                 </div>
                                 <div class="nav-item-link">
-                                    <a href="#" class="nav-link">how to use</a>
+                                    <a href="#menu" class="nav-link">how to use</a>
                                 </div>
                                 <div class="nav-item-link">
-                                    <a href="#" class="nav-link">roadmap</a>
+                                    <a href="#menu" class="nav-link">roadmap</a>
                                 </div>
                             </div>
                         </div>
@@ -816,69 +1019,4 @@
 
 </html>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        AOS.init({
-            offset: 50,
-        });
-    });
-    function toggleMenu() {
-        var mobileMenu = document.getElementById("mobileNav");
-        var body = document.body;
-
-        if (mobileMenu.style.display === "flex") {
-            mobileMenu.style.display = "none";
-            body.classList.remove("body-no-scroll");
-        } else {
-            mobileMenu.style.display = "flex";
-            body.classList.add("body-no-scroll");
-        }
-    }
-    function showHoverItem(element, ix) {
-        if (ix === 1) {
-            const item = element.querySelector('.integrate-item');
-            const itemHover = element.querySelector('.integrate-item-hover');
-            item.style.opacity = '0';
-            itemHover.style.display = 'block';
-        } else if (ix === 2) {
-            const item = element.querySelector('.integrate-item1');
-            const itemHover = element.querySelector('.integrate-item-hover1');
-            item.style.opacity = '0';
-            itemHover.style.display = 'block';
-        } else if (ix === 3) {
-            const item = element.querySelector('.integrate-item2');
-            const itemHover = element.querySelector('.integrate-item-hover2');
-            item.style.opacity = '0';
-            itemHover.style.display = 'block';
-        } else {
-            const item = element.querySelector('.integrate-item3');
-            const itemHover = element.querySelector('.integrate-item-hover3');
-            item.style.opacity = '0';
-            itemHover.style.display = 'block';
-        }
-    }
-
-    function hideHoverItem(element, ix) {
-        if (ix === 1) {
-            const item = element.querySelector('.integrate-item');
-            const itemHover = element.querySelector('.integrate-item-hover');
-            item.style.opacity = '1';
-            itemHover.style.display = 'none';
-        } else if (ix === 2) {
-            const item = element.querySelector('.integrate-item1');
-            const itemHover = element.querySelector('.integrate-item-hover1');
-            item.style.opacity = '1';
-            itemHover.style.display = 'none';
-        } else if (ix === 3) {
-            const item = element.querySelector('.integrate-item2');
-            const itemHover = element.querySelector('.integrate-item-hover2');
-            item.style.opacity = '1';
-            itemHover.style.display = 'none';
-        } else {
-            const item = element.querySelector('.integrate-item3');
-            const itemHover = element.querySelector('.integrate-item-hover3');
-            item.style.opacity = '1';
-            itemHover.style.display = 'none';
-        }
-    }
-</script>
+<script src="./public/js/index.js"></script>
