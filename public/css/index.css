@@ -2,16 +2,28 @@
     padding: 0;
     margin: 0;
     font-family: 'Sarabun', sans-serif;
-    /* background: #080811; */
+    -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body, div, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
 
 html {
     background: #080811;
 }
 
 body {
-    width: 100%;
+    overflow-y: auto;
     z-index: 0;
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -805,6 +817,7 @@ li {
 /* forever */
 
 .forever {
+    overflow: hidden;
     width: 100%;
     padding: 0 20px;
     display: flex;
@@ -1089,6 +1102,7 @@ li {
 /* howto */
 
 .howto {
+    overflow-x: hidden;
     width: 100%;
     margin: 0 auto;
     padding: 100px 20px 50px;
@@ -1277,6 +1291,7 @@ li {
 /* model */
 
 .model {
+    overflow: hidden;
     width: 100%;
     padding: 100px 20px 200px;
     display: flex;
@@ -1606,7 +1621,7 @@ li {
 @media (max-width: 1024px) {
     .integrate {
         padding: 40px 20px 40px 0;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 }
 
@@ -1778,34 +1793,42 @@ li {
 
 
 .integrate-list-step-position1 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position2 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position3 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position4 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position5 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position6 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position7 {
+    padding-left: 20px;
     position: relative;
 }
 
 .integrate-list-step-position8 {
+    padding-left: 20px;
     position: relative;
 }
 
@@ -1820,6 +1843,7 @@ li {
 .integrate-item-hover {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1834,6 +1858,7 @@ li {
 .integrate-item-hover1 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1848,6 +1873,7 @@ li {
 .integrate-item-hover2 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1862,6 +1888,7 @@ li {
 .integrate-item-hover3 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1876,6 +1903,7 @@ li {
 .integrate-item-hover4 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1890,6 +1918,7 @@ li {
 .integrate-item-hover5 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1904,6 +1933,7 @@ li {
 .integrate-item-hover6 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1918,6 +1948,7 @@ li {
 .integrate-item-hover7 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1932,6 +1963,7 @@ li {
 .integrate-item-hover8 {
     display: none;
     position: absolute;
+    padding-left: 20px;
     top: 0;
     left: 0;
     transition: transform 2s ease;
@@ -1957,7 +1989,7 @@ li {
     z-index: 999;
     position: absolute;
     top: 40px;
-    left: 40px;
+    left: 60px;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -1967,7 +1999,7 @@ li {
 @media (max-width: 575px) {
     .integrate-item-detail-hover {
         top: 70px;
-        left: 30px;
+        left: 50px;
         gap: 60px;
     }
 }
